@@ -1,0 +1,41 @@
+.card{
+    z-index: 10;
+    padding: 2.5rem;
+    width: 100%;
+    max-height: 300px;
+    cursor: pointer;
+    background: no-repeat;
+    transition: all;
+    transition-duration: 200ms;
+    box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
+    background-image: url(images\instant-settlement-bg.svg);
+    background-color: white;
+}
+
+.card:hover{
+    scale: 1.05;
+    background: url(images\instant-settlement-bghover.svg);
+    background-color: white;
+}
+
+.bgsetting{
+    background-size: 100% 100%;
+}
+.corefeaturesection{
+    background-size: 100% 100%;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.companieslist{
+    animation: 5s infinite linear movecompany;
+}
+
+@keyframes movecompany {
+    0%{
+        top:0;
+    }
+    100%{
+        top:-50%;
+    }
+}
